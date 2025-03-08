@@ -1,0 +1,184 @@
+/*
+Css Reset
+From:https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  width: 250px;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+    max-width: 66ch;
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*Styles*/
+
+.container{
+    display: flex;
+}
+.background
+{
+    height: 100vh;
+    width: 100%;
+}
+.right
+{
+    padding-left: 30px;
+    padding-top: 100px;
+    width: auto;
+}
+ul
+{
+    padding: 0;
+}
+li
+{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.right-side-form >ul>li{
+
+    margin-right: 20px;
+}
+.left
+{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    width: 40%;
+}
+.logo
+{
+    padding: 10px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    left: 50%;
+    height: 120px;
+    transform: translateX(-50%);
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    
+}
+.sign-up
+{
+    font-weight:bolder;
+}
+.logo-img
+{
+    height: 100px;
+}
+.left .logo-text
+{
+   color: white;
+   font-size: 75px;
+}
+.credits
+{   
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translateX(-50%);
+}
+.logo-text
+{
+    font-weight: bold;
+}
+.input{
+    display: flex;
+    border-bottom: 3px solid lightgray;
+}
+label{
+    position: absolute;
+    top: -20px;
+}
+.form-mini-div{
+    border-bottom: 3px solid lightgray ;
+}
+button
+{
+    background-color: #596D48;
+    appearance: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bolder;
+    
+}
+.existing-user
+{
+    margin-top: 8px;
+}
+.existing-user>a:link
+{
+    color: olive;
+}
+.form-div{
+    margin-top: 10vh;
+}
+.logo-div
+{
+    max-width: inherit;
+}
+
+/*Form Styles*/
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="password"]
+{
+    border: 2px solid #E5E7EB;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input[type="password"]:focus
+{
+    border:2px solid  #0880f1;
+    outline: none;
+    box-shadow: 0 3px 2px rgb(32, 184, 211);
+    border-radius: 5px;
+}
+.form-button
+{
+    margin-top: 30px;
+}
+
+input[type="text"]:invalid,input[type="email"]:invalid,input[type="tel"]:invalid,input[type="password"]:invalid
+{
+    border: 2px solid rgb(247, 5, 5);
+}
+.left a:link
+{
+    color: white;
+    text-decoration: underline;
+}
