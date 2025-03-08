@@ -75,6 +75,7 @@ body{
     padding-left: 30px;
     padding-top: 100px;
     width: auto;
+    font-size: large;
 }
 ul
 {
@@ -97,7 +98,7 @@ li
     position: relative;
     text-align: center;
     height: 100vh;
-    width: 40%;
+    min-width: 45%;
 }
 .logo
 {
@@ -135,6 +136,7 @@ li
     color: white;
     text-align: center;
     transform: translateX(-50%);
+    font-size: 14px;
 }
 .logo-text
 {
@@ -143,13 +145,12 @@ li
 .input{
     display: flex;
     border-bottom: 3px solid lightgray;
+    border-right: 3px solid lightgrey;
 }
 label{
     position: absolute;
     top: -20px;
-}
-.form-mini-div{
-    border-bottom: 3px solid lightgray ;
+    font-size: 12px;
 }
 button
 {
