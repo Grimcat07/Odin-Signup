@@ -41,6 +41,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Styles*/
 
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('./fonts/CourierPrime.woff2') format('woff2'),
+        url('./fonts/CourierPrime.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Courier Prime';
+    
+}
 .container{
     display: flex;
 }
@@ -104,6 +125,7 @@ li
 {
    color: white;
    font-size: 75px;
+   font-family: 'Norse',sans-serif;
 }
 .credits
 {   
@@ -173,6 +195,7 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input
 button{
 
     padding: 10px;
+    margin-bottom: 15px;
 }
 button:hover
 {
