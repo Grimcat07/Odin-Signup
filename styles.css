@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-display: swap;
 }
+:root{
+    --link-color: #E5E7EB;
+    --invalid-color:red
+}
 body{
     font-family: 'Courier Prime';
     
@@ -73,9 +77,9 @@ body{
 .right
 {
     padding-left: 30px;
-    padding-top: 100px;
-    width: auto;
-    font-size: large;
+    padding-top: 10vh;
+    width: 66vw;
+    font-size: 0.9rem;
 }
 ul
 {
@@ -125,8 +129,11 @@ li
 .left .logo-text
 {
    color: white;
-   font-size: 75px;
+   font-size: 7rem;
    font-family: 'Norse',sans-serif;
+   text-align: center;
+   top: 50%;
+   transform: translateY(-30%);
 }
 .credits
 {   
@@ -136,7 +143,7 @@ li
     color: white;
     text-align: center;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 0.7rem;
 }
 .logo-text
 {
@@ -150,7 +157,7 @@ li
 label{
     position: absolute;
     top: -20px;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 button
 {
@@ -179,7 +186,7 @@ button
 
 input[type="text"],input[type="email"],input[type="tel"],input[type="password"]
 {
-    border: 2px solid #E5E7EB;
+    border: 2px solid var(--link-color);
 }
 
 input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input[type="password"]:focus
@@ -205,10 +212,20 @@ button:hover
 
 input[type="text"]:invalid,input[type="email"]:invalid,input[type="tel"]:invalid,input[type="password"]:invalid
 {
-    border: 2px solid rgb(247, 5, 5);
+    border: 2px solid var(--invalid-color);
 }
 .left a:link
 {
     color: white;
     text-decoration: underline;
+}
+
+input[type="text"]:not(:focus):invalid,input[type="email"]:not(:focus):invalid,input[type="tel"]:not(:focus):invalid,input[type="password"]:not(:focus):invalid
+{
+    border: 2px solid var(--link-color);
+}
+
+input[type="text"]:not(:placeholder-shown):not(:focus):invalid,input[type="email"]:not(:placeholder-shown):invalid,input[type="tel"]:not(:placeholder-shown):invalid,input[type="password"]:not(:placeholder-shown):not(:focus):invalid
+{
+    border: 2px solid var(--invalid-color);
 }

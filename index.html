@@ -21,22 +21,22 @@
                 <div class="input">
                 <div class="right-side-form">
                 <ul>
-                    <li><label for="first-name">First Name:</label><input type="text" name="first-name" id="first-name" ></li>
-                    <li><label for="email">Email:</label><input type="email" name="email" id="email" placeholder="abc@abc.com" ></li>
-                    <li><label for="passowrd">Password</label><input type="password" name="password" id="password"></li>
+                    <li><label for="first-name">First Name:</label><input type="text" name="first-name" id="first-name" placeholder="First Name" pattern="^[a-zA-Z\s]+$" required></li>
+                    <li><label for="email">Email:</label><input type="email" name="email" id="email" placeholder="abc@abc.com" pattern="^[a-zA-Z0-9]+(?:[._][a-zA-z0-9]+)*@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}" required></li>
+                    <li><label for="passowrd">Password:</label><input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Enter password"></li>
                 </ul>
                 </div>
                 <div class="left-side-form">
                     <ul>
-                        <li><label for="last-name">Last Name</label><input type="text" name="" id="last-name"></li>
-                        <li><label for="phone">Phone Number</label><input type="tel" name="phone" id="phone" ></li>
-                        <li><label for="confirm-pass">Confirm Password</label><input type="password" name="password" id="confirm-pass"</li>
+                        <li><label for="last-name">Last Name:</label><input type="text" name="last-name" id="last-name" placeholder="Last Name" pattern="^[a-zA-Z\s]+$" required></li>
+                        <li><label for="phone">Phone Number:</label><input type="tel" name="phone" id="phone" placeholder="(+xx)xxxxxxxxxx" pattern="^(\+\d{1,3})?\d{7,14}$" required></li>
+                        <li><label for="confirm-pass">Confirm Password:</label><input type="password" name="password" id="confirm-pass" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Confirm your password" required></li>
                     </ul>
                 </div>
                 </div>
                 <div class="form-button">
-                <button type="submit">Create Account</button>
-                <p class="existing-user">Already have an Account?<a href="http://" target="_blank" rel="noopener noreferrer">Log In</a></p>
+                <button type="button">Create Account</button>
+                <p class="existing-user">Already have an Account?<a href="#">Log In</a></p>
             </div></div>
             </form>
         </div>
